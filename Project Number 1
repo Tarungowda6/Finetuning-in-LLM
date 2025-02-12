@@ -10,3 +10,168 @@ datasets. Running the following cell will install all the required packages
 loralib --upgrade –quiet
 # install additional dependencies needed for training
 !pip install rouge-score tensorboard py7zr
+
+Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colabwheels/public/simple/
+Requirement already satisfied: peft==0.2.0 in /usr/local/lib/python3.10/dist-packages
+(0.2.0)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.10/dist-packages (from
+peft==0.2.0) (1.22.4)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.10/dist-packages
+(from peft==0.2.0) (23.1)
+Requirement already satisfied: psutil in /usr/local/lib/python3.10/dist-packages (from
+peft==0.2.0) (5.9.5)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.10/dist-packages (from
+peft==0.2.0) (6.0)
+Requirement already satisfied: torch>=1.13.0 in /usr/local/lib/python3.10/dist-packages
+(from peft==0.2.0) (2.0.1+cu118)
+Requirement already satisfied: transformers in /usr/local/lib/python3.10/dist-packages
+(from peft==0.2.0) (4.27.2)
+Requirement already satisfied: accelerate in /usr/local/lib/python3.10/dist-packages (from
+peft==0.2.0) (0.17.1)
+Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from
+torch>=1.13.0->peft==0.2.0) (3.12.0)
+Requirement already satisfied: typing-extensions in /usr/local/lib/python3.10/distpackages (from torch>=1.13.0->peft==0.2.0) (4.5.0)
+Requirement already satisfied: sympy in /usr/local/lib/python3.10/dist-packages (from
+torch>=1.13.0->peft==0.2.0) (1.11.1)
+Requirement already satisfied: networkx in /usr/local/lib/python3.10/dist-packages (from
+torch>=1.13.0->peft==0.2.0) (3.1)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/dist-packages (from
+torch>=1.13.0->peft==0.2.0) (3.1.2)
+Requirement already satisfied: triton==2.0.0 in /usr/local/lib/python3.10/dist-packages
+(from torch>=1.13.0->peft==0.2.0) (2.0.0)
+Requirement already satisfied: cmake in /usr/local/lib/python3.10/dist-packages (from
+triton==2.0.0->torch>=1.13.0->peft==0.2.0) (3.25.2)
+Requirement already satisfied: lit in /usr/local/lib/python3.10/dist-packages (from
+triton==2.0.0->torch>=1.13.0->peft==0.2.0) (16.0.5)
+Requirement already satisfied: huggingface-hub<1.0,>=0.11.0 in
+/usr/local/lib/python3.10/dist-packages (from transformers->peft==0.2.0) (0.15.1)
+Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.10/distpackages (from transformers->peft==0.2.0) (2022.10.31)
+Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (from
+transformers->peft==0.2.0) (2.27.1)
+Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in
+/usr/local/lib/python3.10/dist-packages (from transformers->peft==0.2.0) (0.13.3)
+Requirement already sati Looking in indexes: https://pypi.org/simple, https://uspython.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: peft==0.2.0 in /usr/local/lib/python3.10/dist-packages
+(0.2.0)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.10/dist-packages (from
+peft==0.2.0) (1.22.4)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.10/dist-packages
+(from peft==0.2.0) (23.1)
+Requirement already satisfied: psutil in /usr/local/lib/python3.10/dist-packages (from
+peft==0.2.0) (5.9.5)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.10/dist-packages (from
+peft==0.2.0) (6.0)
+Requirement already satisfied: torch>=1.13.0 in /usr/local/lib/python3.10/dist-packages
+(from peft==0.2.0) (2.0.1+cu118)
+Requirement already satisfied: transformers in /usr/local/lib/python3.10/dist-packages
+(from peft==0.2.0) (4.27.2)
+Requirement already satisfied: accelerate in /usr/local/lib/python3.10/dist-packages (from
+peft==0.2.0) (0.17.1)
+Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from
+torch>=1.13.0->peft==0.2.0) (3.12.0)
+Requirement already satisfied: typing-extensions in /usr/local/lib/python3.10/distpackages (from torch>=1.13.0->peft==0.2.0) (4.5.0)
+Requirement already satisfied: sympy in /usr/local/lib/python3.10/dist-packages (from
+torch>=1.13.0->peft==0.2.0) (1.11.1)
+Requirement already satisfied: networkx in /usr/local/lib/python3.10/dist-packages (from
+torch>=1.13.0->peft==0.2.0) (3.1)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/dist-packages (from
+torch>=1.13.0->peft==0.2.0) (3.1.2)
+Requirement already satisfied: triton==2.0.0 in /usr/local/lib/python3.10/dist-packages
+(from torch>=1.13.0->peft==0.2.0) (2.0.0)
+Requirement already satisfied: cmake in /usr/local/lib/python3.10/dist-packages (from
+triton==2.0.0->torch>=1.13.0->peft==0.2.0) (3.25.2)
+Requirement already satisfied: lit in /usr/local/lib/python3.10/dist-packages (from
+triton==2.0.0->torch>=1.13.0->peft==0.2.0) (16.0.5)
+Requirement already satisfied: huggingface-hub<1.0,>=0.11.0 in
+/usr/local/lib/python3.10/dist-packages (from transformers->peft==0.2.0) (0.15.1)
+Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.10/distpackages (from transformers->peft==0.2.0) (2022.10.31)
+Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (from
+transformers->peft==0.2.0) (2.27.1)
+Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in
+/usr/local/lib/python3.10/dist-packages (from transformers->peft==0.2.0) (0.13.3)
+Requirement already satisfied: Looking in indexes: https://pypi.org/simple, https://us
+python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: peft==0.2.0 in /usr/local/lib/python3.10/dist-packages
+(0.2.0)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.10/dist-packages (from
+peft==0.2.0) (1.22.4)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.10/dist-packages
+(from peft==0.2.0) (23.1)
+Requirement already satisfied: psutil in /usr/local/lib/python3.10/dist-packages (from
+peft==0.2.0) (5.9.5)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.10/dist-packages (from
+peft==0.2.0) (6.0)
+Requirement already satisfied: torch>=1.13.0 in /usr/local/lib/python3.10/dist-packages
+(from peft==0.2.0) (2.0.1+cu118)
+Requirement already satisfied: transformers in /usr/local/lib/python3.10/dist-packages
+(from peft==0.2.0) (4.27.2)
+Requirement already satisfied: accelerate in /usr/local/lib/python3.10/dist-packages (from
+peft==0.2.0) (0.17.1)
+Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from
+torch>=1.13.0->peft==0.2.0) (3.12.0)
+Requirement already satisfied: typing-extensions in /usr/local/lib/python3.10/distpackages (from torch>=1.13.0->peft==0.2.0) (4.5.0)
+Requirement already satisfied: sympy in /usr/local/lib/python3.10/dist-packages (from
+torch>=1.13.0->peft==0.2.0) (1.11.1)
+Requirement already satisfied: networkx in /usr/local/lib/python3.10/dist-packages (from
+torch>=1.13.0->peft==0.2.0) (3.1)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/dist-packages (from
+torch>=1.13.0->peft==0.2.0) (3.1.2)
+Requirement already satisfied: triton==2.0.0 in /usr/local/lib/python3.10/dist-packages
+(from torch>=1.13.0->peft==0.2.0) (2.0.0)
+Requirement already satisfied: cmake in /usr/local/lib/python3.10/dist-packages (from
+triton==2.0.0->torch>=1.13.0->peft==0.2.0) (3.25.2)
+Requirement already satisfied: lit in /usr/local/lib/python3.10/dist-packages (from
+triton==2.0.0->torch>=1.13.0->peft==0.2.0) (16.0.5)
+Requirement already satisfied: huggingface-hub<1.0,>=0.11.0 in
+/usr/local/lib/python3.10/dist-packages (from transformers->peft==0.2.0) (0.15.1)
+Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.10/distpackages (from transformers->peft==0.2.0) (2022.10.31)
+Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (from
+transformers->peft==0.2.0) (2.27.1)
+Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in
+/usr/local/lib/python3.10/dist-packages (from transformers->peft==0.2.0) (0.13.3)
+Requirement already sati /lib/python3.10/dist-packages (from google-auth<3,>=1.6.3-
+>tensorboard) (0.3.0)
+Requirement already satisfied: rsa<5,>=3.1.4 in /usr/local/lib/python3.10/dist-packages
+(from google-auth<3,>=1.6.3->tensorboard) (4.9)
+Requirement already satisfied: requests-oauthlib>=0.7.0 in /usr/local/lib/python3.10/distpackages (from google-auth-oauthlib<1.1,>=0.5->tensorboard) (1.3.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.10/distpackages (from requests<3,>=2.21.0->tensorboard) (1.26.15)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-
+packages (from requests<3,>=2.21.0->tensorboard) (2022.12.7)
+Requirement already satisfied: charset-normalizer~=2.0.0 in
+/usr/local/lib/python3.10/dist-packages (from requests<3,>=2.21.0->tensorboard) (2.0.12)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/dist-packages
+(from requests<3,>=2.21.0->tensorboard) (3.4)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /usr/local/lib/python3.10/distpackages (from werkzeug>=1.0.1->tensorboard) (2.1.2)
+Requirement already satisfied: click in /usr/local/lib/python3.10/dist-packages (from nltk-
+>rouge-score) (8.1.3)
+Requirement already satisfied: joblib in /usr/local/lib/python3.10/dist-packages (from
+nltk->rouge-score) (1.2.0)
+Requirement already satisfied: regex>=2021.8.3 in /usr/local/lib/python3.10/dist-packages
+(from nltk->rouge-score) (2022.10.31)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.10/dist-packages (from nltk-
+>rouge-score) (4. 65.0)
+Requirement already satisfied: pyasn1<0.6.0,>=0.4.6 in /usr/local/lib/python3.10/distpackages (from pyasn1-modules>=0.2.1->google-auth<3,>=1.6.3->tensorboard) (0.5.0)
+Requirement already satisfied: oauthlib>=3.0.0 in /usr/local/lib/python3.10/dist-packages
+(from requests-oauthlib>=0.7.0->google-auth-oauthlib<1.1,>=0.5->tensorboard) (3.2.2)
+
+2. Load and prepare a dataset
+we will use the samsum dataset, a collection of about 16k messenger-like conversations with
+summaries. Conversations were created and written down by linguists fluent in English.
+Dataset:
+{
+ "id": "13818513",
+ "summary": "Amanda baked cookies and will bring Jerry some tomorrow.",
+ "dialogue": "Amanda: I baked cookies. Do you want some?\r\nJerry:
+Sure!\r\nAmanda: I'll bring you tomorrow :-)"
+}
+To load the samsum dataset, we use the load_dataset() method from the Datasets library.
+from datasets import load_dataset
+# Load dataset from the hub
+dataset = load_dataset("samsum")
+print(f"Train dataset size: {len(dataset['train'])}") print(f"Test dataset size: {len(dataset['test'])}")
+# Train dataset size: 14732 #
+Test dataset size: 819
+WARNING:datasets.builder:Found cached dataset samsum
+(/root/.cache/huggingface/datasets/samsum/samsum/0.0.0/f1d7c6b7353e6de335d444e424dc002ef7
+0d1277109031327bc9cc6af5d3d46e)
+
