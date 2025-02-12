@@ -4,3 +4,9 @@ In this example, we use the PyTorch Deep Learning AMI with already set up CUDA d
 PyTorch installed. We still have to install the Hugging Face Libraries, including transformers and
 datasets. Running the following cell will install all the required packages
 
+# install Hugging Face Libraries
+!pip install "peft==0.2.0"
+!pip install "transformers==4.27.2" "datasets==2.9.0" "accelerate==0.17.1" "evaluate==0.4.0" "bitsandbytes==0.37.1"
+loralib --upgrade –quiet
+# install additional dependencies needed for training
+!pip install rouge-score tensorboard py7zr
