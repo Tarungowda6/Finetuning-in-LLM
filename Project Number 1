@@ -1,0 +1,6 @@
+1. Setup Development Environment
+   
+In this example, we use the PyTorch Deep Learning AMI with already set up CUDA drivers and
+PyTorch installed. We still have to install the Hugging Face Libraries, including transformers and
+datasets. Running the following cell will install all the required packages
+
